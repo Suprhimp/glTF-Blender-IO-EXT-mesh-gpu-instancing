@@ -66,6 +66,9 @@ class glTF2ExportUserExtension:
             )
 
             gltf2_node.mesh = result
+            gltf2_node.rotation = [0.0,0.0,0.0,1.0]
+            gltf2_node.translation = [0.0,0.0,0.0]
+            gltf2_node.scale = [1.0,1.0,1.0]
 
             # @TODO: Convert world space matrix to parent (this node)
             #        space matrix
